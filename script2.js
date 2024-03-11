@@ -63,7 +63,7 @@ console.log(`After concat(subsetOfMyProducts)`, concatenatedArrays);
 // Objects
 
 let person ={
-    name: "John",
+    firstname: "John",
     surname: "Doe",
     address: {
         street: "Cetatii",
@@ -82,4 +82,28 @@ let person ={
 console.log(`Person:`, person);
 console.log(`Nume persoana: ${person.name}`);
 console.log(`Cod postal: ${person.address.zipCode}`);
+console.log(person.address.apartament);
+// console.log(person.apartament); returneaza undefined
 
+// bracketes notation
+
+//console.log{`person surname: ${person["surname"]}`};
+
+
+// modficare val
+
+//person firstname : "Ion",
+//console.log(`name:`, person2.name);
+
+// comparare obiecte
+
+const obj1 = {a:10, b: true};
+const obj2 = {a:10, b: true};
+const obj3 = obj4;
+console.log(`obj1 === obj2=> ${obj1===obj2}`);
+console.log(`obj1 === obj3 =>` ${obj1 === obj3});
+
+// comparare dupa prop
+
+const areEqual = obj1.a === obj2.a && obj2.b === obj3.b;
+console.log(`are equal:`, areEqual);
