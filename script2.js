@@ -99,11 +99,36 @@ console.log(person.address.apartament);
 
 const obj1 = {a:10, b: true};
 const obj2 = {a:10, b: true};
-const obj3 = obj4;
+//const obj3 = obj4;
 console.log(`obj1 === obj2=> ${obj1===obj2}`);
-console.log(`obj1 === obj3 =>` ${obj1 === obj3});
+//console.log(`obj1 === obj3 =>`${obj1 === obj3});
 
 // comparare dupa prop
 
-const areEqual = obj1.a === obj2.a && obj2.b === obj3.b;
-console.log(`are equal:`, areEqual);
+//const areEqual = obj1.a === obj2.a && obj2.b === obj3.b;
+//console.log(`are equal:`, areEqual);
+
+// stergere proprietate obiect
+
+delete person.age;
+console.log(`person:`, person);
+
+// Obiectul Date
+
+let currentDate = new Date();
+console.log(`date:`, currentDate);
+
+//accesare an
+
+console.log(`an:`, currentDate.getFullYear());
+
+// accesare luna
+const months = ['Ianuarie', 'Februarie', 'Martie', 'Aprilie'];
+const currentMonthIndex = currentDate.getMonth();
+console.log(`luna:`, currentDate.getMonth());
+console.log(`luna:`, months(currrentMonthIndex));
+
+// accesare zi
+
+console.log(`day of the week`, currentDate.getDate());
+
