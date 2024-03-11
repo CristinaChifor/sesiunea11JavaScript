@@ -60,3 +60,26 @@ console.log(`After splice(2, 1, "Camasa")`, myProducts);
 const concatenatedArrays = myProducts.concat(subsetOfMyProducts);
 console.log(`After concat(subsetOfMyProducts)`, concatenatedArrays);
 
+// Objects
+
+let person ={
+    name: "John",
+    surname: "Doe",
+    address: {
+        street: "Cetatii",
+        number: 47,
+        apartament: "P1",
+        bloc: "G",
+        tronson: 1,
+        zipCode:"100203",
+        city: "Cluj",
+        country: "Romania",
+        county: "Cluj"
+    },
+    age: 30
+};
+
+console.log(`Person:`, person);
+console.log(`Nume persoana: ${person.name}`);
+console.log(`Cod postal: ${person.address.zipCode}`);
+
