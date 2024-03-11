@@ -132,3 +132,7 @@ console.log(`luna:`, months(currrentMonthIndex));
 
 console.log(`day of the week`, currentDate.getDate());
 
+// Date- Operatii
+
+// de exersat acasa!!!
+// timestamps
